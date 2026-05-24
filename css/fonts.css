@@ -1,0 +1,64 @@
+/**
+ * 本地端字型載入配置 (Local Font Face Configuration)
+ * 來源路徑：/opt/CMPT_ROBOT/frontend/fonts
+ * * 說明：
+ * 1. 使用 'Inter' 作為系統主字型，其具備極高的數位螢幕辨識度。
+ * 2. 透過 'font-display: swap' 確保字型載入期間不會出現空白文字 (FOIT)，提升啟動體驗。
+ * 3. 採用 WOFF2 壓縮格式，優化網路傳輸效率。
+ */
+
+/* --- Inter Light (字重: 300) ---
+   適用於：次要資訊、背景標籤或大標題的細體裝飾 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/inter-v20-latin-300.woff2') format('woff2');
+}
+
+/* --- Inter Regular (字重: 400) ---
+   適用於：內文、系統說明、側邊欄選單預設狀態 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+/* --- Inter Medium (字重: 500) ---
+   適用於：卡片標題、按鈕文字，提供比內文稍強的視覺權重 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+}
+
+/* --- Inter SemiBold (字重: 600) ---
+   適用於：導航選單啟動狀態 (Active)、重要警示標題 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
+}
+
+/* --- Inter Bold (字重: 700) ---
+   適用於：關鍵數據顯示、異常告警數值、頁首主標題 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+}
+
+/**
+ * 維護建議：
+ * 如果未來需要支援等寬字型（適用於座標或日誌），
+ * 建議仿照上述格式新增 'JetBrains Mono' 相關配置。
+ */
